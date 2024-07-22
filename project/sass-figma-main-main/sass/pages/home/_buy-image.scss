@@ -1,0 +1,90 @@
+@use "../../abstracts/mixins";
+
+@use "../../abstracts/variables";
+
+
+.page-input-two select {
+  @include mixins.center-input;
+}
+.amount-box {
+  @include mixins.big-input;
+  @include mixins.flex-center(space-between);
+  padding-right:30px;
+  margin-bottom: 30px;
+  margin-right: 30px;
+  input {
+    height: 75px;
+    text-align: right;
+    outline: 0 !important;
+    border: none;
+    width: 100%;
+    color: var(--FONT-BLACK, #222);
+    text-align: right;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    &::placeholder {
+      color: var(--FONT-BLACK, #222);
+      text-align: right;
+      font-family: Poppins;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+  }
+  span {
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 500;
+    background: var(
+      --GRA-Blue,
+      linear-gradient(137deg, #468ef9 -12.5%, #0c66ee 107.5%)
+    );
+    background-clip: text;
+    height: 44px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+    padding-right: 25px;
+    border-right: 2px solid #468ef9;
+  }
+}
+
+
+  /* select with custom icons */
+  .ui-selectmenu-menu .ui-menu.customicons .ui-menu-item-wrapper {
+    padding: 0.5em 0 0.5em 3em;
+  }
+  .ui-selectmenu-menu .ui-menu.customicons .ui-menu-item .ui-icon {
+    height: 32px;
+    width: 32px;
+    top: 0.1em;
+  }
+  .ui-icon, .ui-widget-content .ui-icon {
+    background: url("http://pngimg.com/uploads/bitcoin/bitcoin_PNG7.png") 0 0 no-repeat;
+  }
+  .ui-icon.podcast {
+    background: url("../../../images/btc.png") 0 0 no-repeat;
+  }
+  .ui-icon.rss {
+    background: url("http://pngimg.com/uploads/bitcoin/bitcoin_PNG7.png") 0 0 no-repeat;
+  }
+
+  /* select with CSS avatar icons */
+  option.avatar {
+    background-repeat: no-repeat !important;
+    padding-left: 20px;
+  }
+  .avatar .ui-icon {
+    background-position: left top;
+  }
+  .form-text-get{
+    padding-left:  2rem; 
+  }
+  .buy-text-content{
+    margin-top: 3rem;
+  }

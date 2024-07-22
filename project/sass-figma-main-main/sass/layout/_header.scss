@@ -1,0 +1,63 @@
+@use "../abstracts/mixins" as m;
+@use "../abstracts/variables" as v;
+
+.header {
+  min-height: 700px;
+  position: relative;
+  overflow: hidden;
+  p {
+    font-family: v.$font-family;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+}
+
+p {
+  color: #666;
+  font-family: v.$font-family;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 166.667% */
+}
+
+.header {
+  .header-img {
+    object-fit: contain;
+
+    @include m.meter(100%, 100%);
+    flex-shrink: 0;
+  }
+}
+
+.circleOne {
+  position: absolute;
+  bottom: 5rem;
+right: 43rem;
+  width: 25px;
+}
+.circleTwo {
+  position: absolute;
+
+  bottom: 10rem;
+  left: 35rem;
+  width: 1rem;
+  z-index: 2;
+}
+
+.circleThree {
+  position: absolute;
+ bottom: 34rem;
+  left: 8rem;
+  width: 1rem;
+}
+
+.star {
+bottom: 33rem;
+  width: 2.5rem;
+  position: absolute;
+  right: 16rem;
+}

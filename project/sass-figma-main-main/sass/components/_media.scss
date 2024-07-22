@@ -1,0 +1,135 @@
+@use '../abstracts/mixins';
+@use '../abstracts/variables';
+@media (max-width: 1205px) {
+  .btn-navbar {
+    display: none !important;
+  }
+  #cornerBlurThree,
+  #cornerBlurTwo {
+    display: none;
+  }
+  .mobil-none {
+    display: none !important;
+  }
+}
+
+@media (max-width: 992px) {
+  .header {
+    h1,
+    p,
+    span {
+      text-align: center !important;
+    }
+    .btn {
+      display: block;
+      width: 100% !important;
+    }}
+  .footer {
+    ul {
+      border-right: none !important;
+    }
+    .form-group {
+      padding-left: 0 !important;
+    }
+    .tablet-padding {
+      padding-top: 144px;
+    }
+  }
+  .get-started {
+    margin: 0;
+    border-radius: 0;
+  }
+  
+}
+@media (max-width: 768px) {
+  .mobil-none {
+    display: none;
+  }
+
+  .header {
+    h1,
+    p,
+    span {
+      text-align: center !important;
+    }
+    .btn {
+      display: block;
+      width: 100% !important;
+    }
+    .header-big-img{
+      display: none;
+    }
+  }
+  .group-holding {
+    border-radius: 0;
+    margin-top: 5rem;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .logo-flex {
+    flex-direction: column;
+  }
+  .credit {
+    .btn {
+      display: block;
+      width: 100% !important;
+    }
+  }
+  .advanced {
+    padding: 0;
+    .reverse {
+      flex-direction: column-reverse;
+    }
+    .wrapper {
+      margin-bottom: 2rem !important;
+    }
+    .sevde {
+      flex-direction: column;
+    }
+  }
+  .footer {
+    .form-group {
+      padding-top: 10px !important;
+    }
+    ul {
+      padding: 10px 0 !important;
+      border-bottom: 1px solid #ddd !important;
+    }
+  }
+  .buy-image {
+    .reverse {
+      flex-direction: column-reverse;
+    }
+  }
+  .content-get-started {
+    padding: 5rem;
+
+    h2 {
+      text-align: center;
+    }
+  }
+  #cornerBlurThree,
+  #cornerBlurTwo {
+    display: none;
+  }
+}
+@media (max-width: 992px) {
+  .btn-navbar {
+    display: none;
+  }
+  .advanced{
+    button{
+ width: 100%;
+    }
+  }
+  .accordion{
+    .coin-wrapper{
+   min-height: 10px;
+   margin: 0;
+    }
+.accordion-text{
+  min-height: 10px;
+  margin:0;
+}
+  }
+}

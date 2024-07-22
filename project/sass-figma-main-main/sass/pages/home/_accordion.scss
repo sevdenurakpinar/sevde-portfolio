@@ -1,0 +1,40 @@
+@use "../../abstracts/mixins";
+@use "../../abstracts/variables";
+
+.coin-wrapper {
+  position: relative;
+  min-height: 600px;
+  margin-top: 5rem;
+}
+.accordion-big-img {
+  width: 100%;
+}
+
+.cardano-perspective {
+  position: absolute;
+  bottom: 19.2rem;
+  right: 60px;
+  height: 20%;
+}
+.doge-coin {
+  position: absolute;
+  top: 20px;
+  left: -8px;
+  height: 20%;
+}
+.accordion-item {
+  border: 0;
+  border-bottom: 1px solid #cccccc;
+}
+.accordion-button:focus {
+  box-shadow: none;
+  border: 0 !important;
+}
+.accordion-button:not(.collapsed) {
+  background-color: transparent !important;
+  box-shadow: none;
+}
+.accordion-text {
+  min-height: 700px;
+  margin-top: 5rem;
+}

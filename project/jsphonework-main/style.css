@@ -1,0 +1,297 @@
+body {
+  font-family: "marcellus_scregular", serif;
+  margin: 0;
+  padding: 0;
+  background-image: url(images/Dark-Mountains-2560x1600\ .jpg);
+  object-fit: cover;
+  background-size: cover;
+}
+.background {
+  -webkit-overflow-scrolling: touch;
+  background-size: cover;
+  height: 53rem;
+
+  font-family: "marcellus_scregular", serif;
+  color: white;
+}
+h1 {
+  font-size: 200px;
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  margin-left: 13rem;
+}
+
+.navbar {
+  opacity: 0.6;
+  color: #ffffff !important;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: block;
+
+  margin: 0;
+  list-style: none;
+  text-decoration-style: none;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar-nav {
+  display: block;
+  justify-content: space-between;
+}
+
+.navbar-nav a {
+  margin-right: 4rem;
+}
+
+.counter span {
+  font-size: 40px;
+  color: #fff;
+  text-align: center;
+  line-height: 100px;
+}
+
+.message {
+  width: 45rem;
+  height: 3rem;
+  margin-left: 21rem;
+}
+.message p {
+  font-size: 20px;
+  color: aliceblue;
+  letter-spacing: 10px;
+
+  position: relative;
+  bottom: 1rem;
+  right: 2rem;
+}
+
+.phone-counter {
+  display: block;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  bottom: 2rem;
+}
+#increase-counter {
+  border-radius: 50%;
+  height: 180px;
+  width: 190px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 2px solid rgba(0, 0, 0, 0);
+  color: white;
+  position: relative;
+  bottom: 4rem;
+}
+
+.tech-slideshow {
+  height: 100px;
+  width: 100px;
+  margin: 0 auto;
+  border-radius: 50%;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+  background-size: contain;
+  position: absolute;
+  overflow: hidden;
+
+  z-index: 2;
+  left: 25rem;
+  bottom: 3.5rem;
+}
+
+.tech-slideshow-2 {
+  height: 100px;
+  width: 100px;
+  margin: 0 auto;
+  border-radius: 50%;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+  background-size: contain;
+  position: absolute;
+  overflow: hidden;
+
+  z-index: 2;
+  left: 45rem;
+  bottom: 3.5rem;
+}
+.tech-slideshow-3 {
+  height: 100px;
+  width: 100px;
+  margin: 0 auto;
+  border-radius: 50%;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+  background-size: contain;
+  position: absolute;
+  overflow: hidden;
+
+  z-index: 2;
+  left: 65rem;
+  bottom: 3.5rem;
+}
+
+.tech-slideshow > div {
+  height: 100px;
+  width: 2526px;
+  background: url(images/sesdalga.jpg);
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  transform: translate3d(0, 0, 0);
+  background-size: contain;
+}
+.tech-slideshow .mover-1 {
+  animation: moveSlideshow 18s linear infinite;
+}
+.tech-slideshow .mover-2 {
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+  background-position: 0 -200px;
+  animation: moveSlideshow 15s linear infinite;
+  background-size: contain;
+}
+.tech-slideshow:hover .mover-2 {
+  opacity: 1;
+}
+
+@keyframes moveSlideshow {
+  100% {
+    transform: translateX(-66.6666%);
+    background-size: contain;
+  }
+}
+.tech-slideshow-2 > div {
+  height: 100px;
+  width: 2526px;
+  background: url(images/sesdalga.jpg);
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  transform: translate3d(0, 0, 0);
+  background-size: contain;
+}
+.tech-slideshow-2 .mover-1 {
+  animation: moveSlideshow 15s linear infinite;
+}
+.tech-slideshow-2 .mover-2 {
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+  background-position: 0 -200px;
+  animation: moveSlideshow 15s linear infinite;
+  background-size: contain;
+}
+.tech-slideshow-2:hover .mover-2 {
+  opacity: 1;
+}
+
+@keyframes moveSlideshow {
+  100% {
+    transform: translateX(-66.6666%);
+    background-size: contain;
+  }
+}
+.tech-slideshow-3 > div {
+  height: 100px;
+  width: 2526px;
+  background: url(images/sesdalga.jpg);
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  transform: translate3d(0, 0, 0);
+  background-size: contain;
+}
+.tech-slideshow-3 .mover-1 {
+  animation: moveSlideshow 12s linear infinite;
+}
+.tech-slideshow-3 .mover-2 {
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+  background-position: 0 -200px;
+  animation: moveSlideshow 15s linear infinite;
+  background-size: contain;
+}
+.tech-slideshow-3:hover .mover-2 {
+  opacity: 1;
+}
+
+@keyframes moveSlideshow {
+  100% {
+    transform: translateX(-66.6666%);
+    background-size: contain;
+  }
+}
+#play-pause {
+  position: absolute;
+  left: 27rem;
+  z-index: 3;
+  bottom: 5.5rem;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+#two {
+  position: absolute;
+  left: 47rem;
+  z-index: 3;
+  bottom: 5.5rem;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+#three {
+  position: absolute;
+  left: 67rem;
+  z-index: 3;
+  bottom: 5.5rem;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+h1 i {
+  position: relative;
+  right: 26rem;
+  top: 17rem;
+}
+
+.click-use {
+  position: relative;
+  top: 9rem;
+  width: 50px;
+  left: 37rem;
+  font-size: 25px;
+  text-align: start;
+  letter-spacing: 15px;
+
+  justify-content: start;
+
+  height: 50px;
+}
+.use-if {
+  position: relative;
+  top: 10rem;
+  letter-spacing: 15px;
+  left: 1rem;
+}
+.row iframe {
+  padding: 1rem;
+  height: 400px;
+}
+.maker {
+  color: #fff;
+  height: 60px;
+  text-align: center;
+
+  font-size: 25px;
+  letter-spacing: 5px;
+}

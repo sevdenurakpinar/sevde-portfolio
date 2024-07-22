@@ -1,0 +1,33 @@
+@use "../../abstracts/mixins";
+
+@use "../../abstracts/variables";
+
+.get-started {
+  margin: 1.5rem;
+
+  margin-top: 10rem;
+  object-fit: contain;
+  border-radius: 40px;
+  @include mixins.meter(98%, auto);
+  min-height: 36rem;
+  @include mixins.flex-center;
+
+  p {
+    text-align: center;
+  }
+}
+
+.arrow-get-started {
+  position: absolute;
+  width: 10rem;
+  height: 10px;
+  left: 29rem;
+  top: 301rem;
+}
+.arrow-get-started-two {
+  position: absolute;
+  width: 10rem;
+  height: 10px;
+  left: 58rem;
+  top: 301rem;
+}
